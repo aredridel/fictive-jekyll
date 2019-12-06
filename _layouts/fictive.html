@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  {% include fictive-head.html %}
+  <body>
+    <header></header>
+    <article class="group">
+      {{ content }}
+    </article>
+    <footer></footer>
+    <script>navigator.sendBeacon && navigator.sendBeacon('https://webstats.dinhe.net/collect')</script>
+
+  </body>
+</html>
