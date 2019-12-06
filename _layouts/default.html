@@ -21,7 +21,7 @@
     <article class="group">
       {{ content }}
     </article>
-    <script>navigator.sendBeacon && navigator.sendBeacon('https://webstats.dinhe.net/collect')</script>
+    <script>navigator.sendBeacon && navigator.sendBeacon('https://webstats.dinhe.net/collect', String(location))</script>
 
   </body>
 </html>
