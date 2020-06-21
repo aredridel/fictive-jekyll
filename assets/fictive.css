@@ -129,14 +129,17 @@ a {
 	color: #2484c1;
 	text-decoration: none;
 }
-a:hover {
+a[href]:hover,
+a[xlink:href]:hover {
 	text-decoration: underline;
 }
-a img {
+a[href] img,
+a[xlink:href] {
 	border: none;
 }
 h1 a,
-h1 a:hover {
+h1 a[href]:hover,
+h1 a[xlink:href]:hover {
 	color: #333;
 	text-decoration: none;
 }
