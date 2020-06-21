@@ -313,10 +313,6 @@ table tbody + tbody {
   margin-top: calc(1rem - 12px);
 }
 
-.md-mathjax-midline {
-  background: #fafafa;
-}
-
 .md-fences .code-tooltip {
   bottom: -2em !important;
 }
