@@ -23,12 +23,20 @@
   --margin: 2em;
   background: #fafcfc;
   color: #333;
+  --link-color: #69e;
   font-size: 13px;
 }
 
-:root.dark {
+:root.theme-dark {
   background-color: #25252b;
   color: #ccc;
+  --link-color: #eee;
+}
+
+:root.theme-newsprint {
+  background: #eae5e2;
+  color: #222;
+  --link-color: #555;
 }
 
 @media (min-width: 600px) {
@@ -134,7 +142,11 @@ code,
 pre {
   font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
   font-size: 0.9em;
-  background: white;
+  background: inherit;
+  color: inherit;
+}
+pre {
+  margin-left: 5ch;
 }
 .md-fences {
   margin-left: 1em;
@@ -146,10 +158,7 @@ pre {
 }
 
 a {
-  color: #2484c1;
-  text-decoration: none;
-}
-a:hover {
+  color: var(--link-color, #2484c1);
   text-decoration: underline;
 }
 a img {
@@ -157,7 +166,7 @@ a img {
 }
 h1 a,
 h1 a:hover {
-  color: #333;
+  color: inherit;
   text-decoration: none;
 }
 hr {

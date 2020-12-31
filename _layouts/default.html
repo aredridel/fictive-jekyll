@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<html {% if page.dark_mode or site.fictive.dark_mode %} class="dark" {% endif %}>
+{% if page.color_scheme %}
+<html class="theme-{{page.color_scheme}}">
+{% else if site.fictive.color_scheme %}
+<html class="theme-{{site.fictive.color_scheme}}">
+{% else %}
+<html>
+{% endif %}
   {% include head.html %}
   <body>
     <article class="group">
