@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body {% if site.dark_mode %} class="dark" {% endif %}>
+  <body {% if site.theme and site.theme.dark_mode %} class="dark" {% endif %}>
     <article class="group">
       {{ content }}
     </article>
-    {% if site.beacon %}
+    {% if site.theme and site.theme.beacon %}
     <script>navigator.sendBeacon && navigator.sendBeacon('https://webstats.dinhe.net/collect', String(location))</script>
     {% endif %}
 
