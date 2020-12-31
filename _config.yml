@@ -1,4 +1,6 @@
 ---
+fictive:
+  configured: true
 defaults:
   -
     scope:
