@@ -21,8 +21,14 @@
 
 :root {
   --margin: 2em;
-  background: #fefefe;
+  background: #fafcfc;
+  color: #333;
   font-size: 13px;
+}
+
+:root.dark {
+  background-color: #25252b;
+  color: #ccc;
 }
 
 @media (min-width: 600px) {
@@ -40,7 +46,7 @@
 
 :root > * {
   font-family: "Gentium Book Basic", Palatino, Times;
-  color: #333;
+  color: inherit;
   line-height: 1.6;
   max-width: 960px;
   margin-left: var(--margin);
@@ -281,6 +287,7 @@ table tbody + tbody {
 /** source code mode */
 #typora-source {
   font-family: Courier, monospace;
+  background-color: #fefefe;
   color: #6a6a6a;
 }
 

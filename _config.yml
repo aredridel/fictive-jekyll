@@ -1,6 +1,7 @@
 ---
 fictive:
   configured: true
+  dark_mode: false
 defaults:
   -
     scope:
